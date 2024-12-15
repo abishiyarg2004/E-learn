@@ -1,0 +1,188 @@
+.bodyinlog{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(104, 134, 136); */
+  
+  backdrop-filter: blur(20px);
+}
+/* Keyframe Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation Classes */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+
+.slide-in-bottom {
+  animation: slideInBottom 1s ease-out;
+}
+
+/* Main Image Styles */
+.mainimg {
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #3ec7ac;
+  padding: 10px 20px;
+}
+
+.nav-title {
+  flex-grow: 1;
+  font-size: 30px;
+}
+
+.nav-button {
+  margin-left: auto;
+}
+
+/* Main Content Styles */
+.main-content {
+  color: #149a7f9e;
+ margin-right: 500px;
+ padding-right: 1000px;
+  margin-left: -5000px; /* Adjusted value to shift content left */
+}
+
+.main-title {
+  border-left: 700px;
+  margin-left: -300px;
+  font-size: 50px;
+}
+
+.main-subtitle {
+  margin-left: -300px;
+  font-size: 20px;
+}
+
+.start-button {
+  margin-right: 10px;
+  margin-left: -500px;
+  background-color: #6cd3df;
+  color: rgb(228, 238, 242);
+}
+
+.video-button {
+  border-color: rgb(170, 224, 236);
+  color: rgb(166, 235, 217);
+}
+
+.main-gif {
+  margin-left: 100px; /* Adjust this value if needed */
+ border-left: 100px;
+ 
+ 
+}
+
+/* Features Section Styles */
+.features-section {
+  padding: 10px;
+  margin-left: -50px; /* Adjusted value to shift content left */
+}
+
+.feature-box {
+  padding: 10px;
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, z-index 0.5s ease, padding 0.5s ease;
+  text-align: center;
+  height: 80px; /* Initial height */
+  width: 80%; /* Initial width */
+}
+
+.feature-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  height: auto; /* Expand to auto height on hover */
+  padding: 20px; /* Add padding on hover */
+}
+
+.feature-box:hover .feature-box-content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.feature-box-content {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none; /* Hide content initially */
+}
+
+.feature-box:hover .feature-box-content {
+  display: block; /* Show content on hover */
+}
+
+.feature-box-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f8f9fa;
+}
+
+.feature-box-content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #16a085;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.feature-box-content a:hover {
+  background-color: #16a085;
+  color: #ffffff;
+}
+.button-group{
+  margin-left: -500px;
+}
+.features{
+  margin-left: -500px;
+}

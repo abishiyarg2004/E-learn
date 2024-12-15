@@ -1,0 +1,29 @@
+.footer {
+    background-color: #0c1b2a;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer .MuiTypography-root {
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-button {
+    margin-top: 10px;
+    background-color: #f26c21;
+    color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+  }
+  

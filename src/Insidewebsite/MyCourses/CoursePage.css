@@ -1,0 +1,40 @@
+.course-page {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 20px auto; /* Center the page with some margin */
+    padding: 20px; /* Add padding inside the page */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: #fff; /* White background */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for animations */
+  }
+  
+  .course-page:hover {
+    transform: scale(1.02); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .course-page h2 {
+    font-size: 2em; /* Larger font size for the title */
+    margin-bottom: 20px; /* Margin below the title */
+  }
+  
+  .course-page p {
+    color: #666; /* Light grey color for text */
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    margin: 10px 0; /* Margin around the paragraphs */
+  }
+  
+  .course-image {
+    width: 100%;
+    max-height: 400px; /* Maximum height for the image */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    border-radius: 10px; /* Rounded corners for the image */
+    transition: transform 0.3s ease; /* Smooth transition for image zoom effect */
+  }
+  
+  .course-image:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+  }
+  
